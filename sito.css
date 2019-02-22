@@ -1,0 +1,27 @@
+body {
+  background-color: #fff;
+  color: #333;
+}
+
+div#Bottone_uno{
+	font-family: "Times New Roman";
+	position: absolute;
+  left: 7px;
+  top: 7px;
+  letter-spacing: 5px;
+	}
+
+div.lettere {
+font-family: "Times New Roman";
+position: absolute;
+right: 7px;
+top: 7px;
+letter-spacing: 5px;
+}
+div#Computer{
+  text-align: center;
+  margin-top: 100px;
+}
+div.container{
+  float:left;
+}
