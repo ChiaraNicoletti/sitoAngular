@@ -13,6 +13,8 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {
 
+  }
+  }
 
 // *login
 $(document).ready(function(){
@@ -24,8 +26,6 @@ $(document).ready(function(){
       else $(this).find('span').html('&#x25BC;')
 })
 });
-}
-}
 //* login validation
 function login (router:Router)
 
