@@ -13,12 +13,13 @@
 
 
 
- #login {
+ #login{
   border-right: 1px solid #ddd;
   box-shadow: 1px 0 0 #fff;
   margin-right: 0px;
 }
  #login-trigger,
+ #signup-trigger,
  #signup a {
   display: inline-block;
   *display: inline;
@@ -63,7 +64,7 @@
 
  #login-content {
   right: 0;
-  
+
 }
 
 /*--------------------*/
@@ -92,7 +93,8 @@
   margin: 10px 0 0 0;
 }
 
-#login #submit {
+#login #submit
+ {
   background-color: #d14545;
   background-image: linear-gradient(top, #e97171, #d14545);
   -moz-border-radius: 3px;
@@ -110,7 +112,8 @@
   color: #fff;
 }
 
-#login #submit:hover,
+#login #submit :hover,
+#login #submit :hover,
 #login #submit:focus {
   background-color: #e97171;
   background-image: linear-gradient(top, #d14545, #e97171);
@@ -134,4 +137,32 @@
   position: relative;
   top: 2px;
   right: 2px;
+}
+
+#signup-trigger {
+ border-radius: 3px 0 0 3px;
+}
+
+#login-trigger:hover,
+#login .active,
+ #signup a:hover {
+ background: #fff;
+
+}
+
+#signup-content {
+ display: none;
+ position: absolute;
+ right: 0;
+ z-index: 999;
+ background: #fff;
+ background-image: linear-gradient(top, #fff, #eee);
+ padding: 15px;
+ box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);
+ border-radius: 3px 0 3px 3px;
+}
+
+#signup-content {
+ right: 0;
+
 }

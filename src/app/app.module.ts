@@ -8,6 +8,7 @@ import { MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatButt
 import { LayoutModule } from '@angular/cdk/layout';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { UtenteComponent } from './utente/utente.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     AppComponent,
     DashboardComponent,
     NavbarComponent,
-    SidebarComponent
+    SidebarComponent,
+    UtenteComponent
   ],
   imports: [
     BrowserModule,

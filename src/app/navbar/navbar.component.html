@@ -3,23 +3,36 @@
 <h3 style="color:blue; background-color:goldenrod; border-radius: 150px; margin-left: 25px; font-size: 20px">Sito</h3>
   <span class="fill-spacer"></span>
   <div id="login">
-        <a id="login-trigger" href="#">
+        <a id="login-trigger">
           Log in <span>▼</span>
         </a>
         <div id="login-content">
           <form>
             <fieldset id="inputs">
-              <input id="username" type="text" name="name" placeholder="Name" required>
-              <input id="password" type="password" name="Password" placeholder="Password" required>
+              <input id="username" type="text" name="username" placeholder="Name" required>
+              <input id="password" type="password" name="password" placeholder="Password" required>
             </fieldset>
             <fieldset id="actions">
-              <input type="submit" id="submit" value="Log in">
-              <label><input type="checkbox" checked="checked"> Keep me signed in</label>
+              <input type="submit" id="submit"(click)="login()" value="Log in">
             </fieldset>
           </form>
         </div>
       </div>
       <div id="signup">
-        <a href="">Sign up FREE</a>
-      </div>
+            <a id="signup-trigger" hr>
+              Sign up <span>▼</span>
+            </a>
+            <div id="signup-content">
+              <form name="myForm" id="contactForm" method="post" placeholder="Name">
+                <fieldset id="inputs">
+                 <input type="text" name="name" class="form-control" placeholder="Nome" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                 <input type="text" name="name" class="form-control" placeholder="Cognome" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+    			 <input type="email" class="form-control" name="email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email" />
+                </fieldset>
+                <fieldset id="actions">
+                  <input type="submit" id="submit" value="Sign Up">
+                </fieldset>
+              </form>
+            </div>
+          </div>
 </mat-toolbar>
