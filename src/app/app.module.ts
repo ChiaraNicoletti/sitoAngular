@@ -9,6 +9,7 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { UtenteComponent } from './utente/utente.component';
+import { HomepageComponent } from './homepage/homepage.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { UtenteComponent } from './utente/utente.component';
     DashboardComponent,
     NavbarComponent,
     SidebarComponent,
-    UtenteComponent
+    UtenteComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,

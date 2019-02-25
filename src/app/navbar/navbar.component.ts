@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
 import {Router} from '@angular/router';
+import {FormControl, FormGroup, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-navbar',
@@ -9,13 +10,13 @@ import {Router} from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 
+  username: string;
+  password: string;
+
+
   constructor( private router: Router) { }
 
   ngOnInit() {
-
-  }
-  }
-
 // *login
 $(document).ready(function(){
   $('#login-trigger').click(function(){
@@ -26,18 +27,6 @@ $(document).ready(function(){
       else $(this).find('span').html('&#x25BC;')
 })
 });
-//* login validation
-function login (router:Router)
-
-    var username = $("#username").val();
-    var password = $("#password").val();
-    var utente = {username:"jonni", password:"password"};
-    if (utente.username == username && utente.password == password) {
-        this.router.navigate(['/utente']);
-    }
-        else{
-            alert("error");
-        }
 
 $(document).ready(function(){
   $('#signup-trigger').click(function(){
@@ -48,3 +37,24 @@ $(document).ready(function(){
       else $(this).find('span').html('&#x25BC;')
 })
 });
+}
+//* login validation
+
+  login() {
+    console.log("hello");
+    this.username = $('#username').val();
+    this.password = $('#password').val();
+    console.log(this.username);
+    console.log(this.password);
+    if(this.username == 'jdoe' && this.password == 'jdoe'){
+    this.router.navigate(["utente"]);
+    }else {
+      alert("Credenziali non valide");
+
+}
+
+registrami(){
+  this.router.navigate(["utente"]);
+}
+}
+}
