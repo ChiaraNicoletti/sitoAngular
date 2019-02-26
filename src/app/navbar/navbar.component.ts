@@ -6,8 +6,8 @@ import {FormControl, FormGroup, Validators} from '@angular/forms';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss']
-})
+  styleUrls: ['./navbar.component.scss']})
+
 export class NavbarComponent implements OnInit {
 
   username: string;
@@ -52,7 +52,6 @@ $(document).ready(function(){
       alert("Credenziali non valide");
 
 }
-
 registrami(){
   this.router.navigate(["utente"]);
 }
