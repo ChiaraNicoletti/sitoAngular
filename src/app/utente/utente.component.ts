@@ -24,7 +24,7 @@ ngOnInit(){
   url: "https://www.eventbriteapi.com/v3/events/search/",
   data: params,
   success: function(data){
- for(var i=0;i<10;i++){(console.log(data);
+ for(var i=0;i<10;i++){console.log(data);
  $("#tableUno").append("<tr> <td>"+(data.events[i].name.text)+"</td>"+"<td>"+(data.events[i].start.local)+"</td>");
   }
   },
@@ -42,10 +42,10 @@ caricanotizie(){
   params ['apiKey']='8ec58347383a461e8fbc05407c025e30';
   params['language']='it';
   $.ajax ({
-    url: "https://newsapi.org/v2/everything?q=bitcoin&from=2019-01-26&sortBy/",
+    url: "https://newsapi.org/v2/everything?q=bitcoin&from=2019-02-01&sortBy/",
     data: params,
     success: function(result){
-   for(var i=0;i<10;i++){(console.log(result);
+   for(var i=0;i<10;i++){console.log(result);
    $("#tableDue").append("<tr> <td>"+(result.articles[i].title)+"</td>"+"<td>"+(result.articles[i].source.name)+"</td>");
     }
     },
